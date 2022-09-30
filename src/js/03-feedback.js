@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 import throttle from 'lodash.throttle';
 import { save, load, remove } from './storage';
 
