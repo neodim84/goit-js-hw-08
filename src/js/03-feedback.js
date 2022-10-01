@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 import throttle from 'lodash.throttle';
 import { save, load, remove } from './storage';
 
@@ -16,7 +16,7 @@ const onFormInput = evt => {
 };
 const throttledOnFormInput = throttle(onFormInput, 500);
 
-form.addEventListener('submit', throttledOnFormInput);
+form.addEventListener('input', throttledOnFormInput);
 
 function initPage() {
   const saveData = load(LOCALE_STORAGE_KEY);
